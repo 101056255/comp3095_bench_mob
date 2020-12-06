@@ -35,10 +35,10 @@
     </style>
     <title>My Profile</title>
 </head>
-<body>
+<body style="background-color: #92badd">
 
 <div class="tab" style="background-color: lavender">
-    <form th:action="@{Tab1}">
+    <form th:action="@{/myprofileadmin}">
         <button class="tablinks">My Profile</button>
     </form>
     <form th:action="@{Tab2}">
@@ -51,9 +51,9 @@
         <button class="tablinks">Support</button>
     </form>
 </div>
-<div>
+<div style="background-color: #92badd">
     <h1>ADMIN PROFILE</h1>
-    <form class="form-control">
+    <form class="form-control" style="background-color: #92badd">
         <div class="form-group">
         <label>
             First Name: <input type="text" placeholder="First Name">
