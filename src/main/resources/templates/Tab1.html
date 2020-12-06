@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: serif;}
+
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+    </style>
+    <title>My Profile</title>
+</head>
+<body>
+
+
+    <h2>My Profile</h2>
+<div class="tab">
+    <form th:action="@{Tab1}">
+        <button class="tablinks">My Profile</button>
+    </form>
+    <form th:action="@{Tab2}">
+        <button class="tablinks">Credit Profile</button>
+    </form>
+    <form th:action="@{Tab3}">
+        <button class="tablinks">Inbox</button>
+    </form>
+    <form th:action="@{Tab4}">
+        <button class="tablinks">Support</button>
+    </form>
+</div>
+<div>
+    <form>
+        <label>
+            First Name: <input type="text" placeholder="First Name">
+        </label>
+        <label>
+            Last Name: <input type="text" placeholder="Last Name">
+        </label>
+        <label>
+            Email: <input type="text" placeholder="Email">
+        </label>
+        <label>
+            Date of Birth: <input type="date">
+        </label>
+        <label>
+            Address: <input type="text" placeholder="Address">
+        </label>
+        <label>
+            City: <input type="text" placeholder="City">
+        </label>
+        <label>
+            Postal Code: <input type="text" placeholder="Postal Code">
+        </label>
+        <label>
+            Country: <input type="text" placeholder="Country">
+        </label>
+        <label>
+            Default Billing Address: <input type="checkbox">
+        </label>
+        <label>
+            Default Shipping Address: <input type="checkbox">
+        </label>
+        <button>Add / Update</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: serif;}
+
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+    </style>
+    <title>Inbox</title>
+</head>
+<body>
+<div class="tab">
+    <form th:action="@{Tab1}">
+        <button class="tablinks">My Profile</button>
+    </form>
+    <form th:action="@{Tab2}">
+        <button class="tablinks">Credit Profile</button>
+    </form>
+    <form th:action="@{Tab3}">
+        <button class="tablinks">Inbox</button>
+    </form>
+    <form th:action="@{Tab4}">
+        <button class="tablinks">Support</button>
+    </form>
+</div>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Ticket #</th>
+                <th>Date Added</th>
+                <th>Subject</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>[]</td>
+                <td>1234</td>
+                <td>Nov 1st 2020</td>
+                <td>Hello this is a subject</td>
+                <td><a href="">Read</a> <a href="">Remove</a> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

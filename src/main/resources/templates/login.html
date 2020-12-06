@@ -6,6 +6,15 @@
 </head>
 <body>
 
+    <form th:action="@{/adminLogin}" method="post">
+        <label>
+            Username: <input type="text" name="userName" value="admin@isp.net">
+        </label>
+        <label>
+            Password: <input type="text" name="password" value="P@ssword1">
+        </label>
+        <input type="submit" name="register">
+    </form>
     <form method="post" th:action="@{register}">
         <button name="btnRegister" value="Register">Register</button>
     </form>
