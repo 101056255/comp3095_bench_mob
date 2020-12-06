@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {font-family: serif;}
@@ -49,7 +51,7 @@
 <body class="text-center">
 
 <div class="tab">
-    <div class="tab">
+    <div class="tab" style="background-color: lavender">
         <form th:action="@{/myprofileadmin}">
             <button class="tablinks">My Profile</button>
         </form>
@@ -72,7 +74,7 @@
 </div>
 
 <div class="card" style="width: 25rem;">
-    <div class="card-header">
+    <div class="card-header" style="background-color: lavender">
         <p class="card-text">
             Recent Activity
         </p>

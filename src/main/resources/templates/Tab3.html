@@ -2,6 +2,8 @@
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <style>
         body {font-family: serif;}
 
@@ -34,8 +36,8 @@
     <title>Inbox</title>
 </head>
 <body>
-<div class="tab">
-    <form th:action="@{Tab1}">
+<div class="tab" style="background-color:lavender;">
+    <form th:action="@{/myprofileadmin}">
         <button class="tablinks">My Profile</button>
     </form>
     <form th:action="@{Tab2}">
@@ -50,14 +52,14 @@
 </div>
 
 <div>
-    <table>
+    <table class="table">
         <thead>
             <tr>
-                <th>Select</th>
-                <th>Ticket #</th>
-                <th>Date Added</th>
-                <th>Subject</th>
-                <th>Actions</th>
+                <th scope="col">Select</th>
+                <th scope="col">Ticket #</th>
+                <th scope="col">Date Added</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -66,7 +68,7 @@
                 <td>1234</td>
                 <td>Nov 1st 2020</td>
                 <td>Hello this is a subject</td>
-                <td><a href="">Read</a> <a href="">Remove</a> </td>
+                <td><a href="" class="btn btn-primary">Read</a> <a href=""class="btn btn-danger" >Remove</a> </td>
             </tr>
         </tbody>
     </table>

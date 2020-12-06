@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Register</title>
 </head>
 <body>
-
-    <h1>Register</h1>
-
-    <form th:action="@{/saveUser}" th:object="${User}" method="post">
+<h1 style="margin-left: 570px;">Register</h1>
+    <form class="form-horizontal" th:action="@{/saveUser}" th:object="${User}" method="post" style="margin-top: 50px;margin-left: 500px;">
+        <div class="form-group">
         <label>
-            Firstname: <input type="text" name="firstName">
+            Firstname: <input type="text" name="firstName" class="control-label">
         </label>
-        <label>
+        </div>
+
+        <div class="form-group" >
+        <label class="control-label">
             Lastname: <input type="text" name="lastName">
         </label>
-        <label>
+        </div>
+        <div class="form-group">
+        <label class="control-label">
             Address: <input type="text" name="address">
         </label>
+        </div>
+        <div class="form-group">
         <label>
             Email: <input type="text" name="userName">
         </label>
+        </div>
+        <div class="form-group">
         <label>
             Password: <input type="password" name="password">
         </label>
+        </div>
+        <div class="form-group">
         <label>
             Confirm Password: <input type="password" name="passwordConfirm">
         </label>
-        <input type="submit" name="register">
+        </div>
+        <input style="margin-left: 100px" type="submit" name="register" class="btn btn-primary">
     </form>
 
 </body>

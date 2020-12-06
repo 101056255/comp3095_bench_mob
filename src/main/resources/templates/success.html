@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <meta charset="UTF-8">
     <title>User Saved</title>
 </head>
-<body>
-    <h1>Client has been added</h1>
+<body style="background-color: lightgreen">
+    <h1 style="margin-top: 250px;margin-left: 470px;">Client has been added</h1>
 
     <form th:action="@{/}">
-        <button type="submit">Return to login page</button>
+        <button style="margin-top: 50px;margin-left: 600px;" class="btn btn-success" type="submit">Return to login page</button>
     </form>
 </body>
 </html>

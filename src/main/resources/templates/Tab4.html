@@ -34,8 +34,8 @@
     <title>Support</title>
 </head>
 <body>
-<div class="tab">
-    <form th:action="@{Tab1}">
+<div class="tab" style="background-color: lavender">
+    <form th:action="@{/myprofileadmin}">
         <button class="tablinks">My Profile</button>
     </form>
     <form th:action="@{Tab2}">
@@ -51,16 +51,22 @@
 
 <div>
     <h3>Support Ticket</h3>
-    <form>
-        <label>
+    <form class="form-control">
+        <div class="form-group">
+        <label class="form-control">
             First Name: <input type="text">
         </label>
+        </div>
+        <div class="form-group">
         <label>
             Email: <input type="text">
         </label>
+        </div>
+        <div class="form-group">
         <label>
             Subject: <input type="text">
         </label>
+        </div>
         <label>
             Message: <textarea rows="5" cols="50"></textarea>
         </label>
