@@ -1,10 +1,10 @@
 /*********************************************************************************
  * Project: COMP3095_bench_mob
- * Assignment: Assignment 2
+ * Assignment: Assignment 3
  * Author(s): Faheem Ahmed, Abdirahman Ali, Edward Philip
  * Student Number: 101197078, 101188723, 10156255
- * Date: Nov 8th, 2020
- * Description: Displays the register.html file to the web page
+ * Date: Dec 6, 2020
+ * Description: Registers a user
  *********************************************************************************/
 package ca.gbc.comp3095.bench_mob.demo.contoller;
 

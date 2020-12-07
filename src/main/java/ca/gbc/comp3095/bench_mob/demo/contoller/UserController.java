@@ -1,10 +1,10 @@
 /*********************************************************************************
  * Project: COMP3095_bench_mob
- * Assignment: Assignment 2
+ * Assignment: Assignment 3
  * Author(s): Faheem Ahmed, Abdirahman Ali, Edward Philip
  * Student Number: 101197078, 101188723, 10156255
- * Date: Nov 8th, 2020
- * Description: Saves the user to the embedded database and notifies user of success
+ * Date: Dec 6, 2020
+ * Description: Saves user into the database.
  *********************************************************************************/
 package ca.gbc.comp3095.bench_mob.demo.contoller;
 

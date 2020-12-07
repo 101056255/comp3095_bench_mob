@@ -1,10 +1,10 @@
 /*********************************************************************************
-* Project: COMP3095_bench_mob
- * Assignment: Assignment 2
+ * Project: COMP3095_bench_mob
+ * Assignment: Assignment 3
  * Author(s): Faheem Ahmed, Abdirahman Ali, Edward Philip
  * Student Number: 101197078, 101188723, 10156255
- * Date: Nov 8th, 2020
- * Description: Dashboard controller, directs user to different tabs based on button input
+ * Date: Dec 6, 2020
+ * Description: Sends user to different tabs controlling navigation
  *********************************************************************************/
 package ca.gbc.comp3095.bench_mob.demo.contoller;
 
